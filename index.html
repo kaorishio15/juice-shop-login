@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- prevents encoding payload exploits -->
+    <meta charset="UTF-8">
+    <!-- prevents scaling issues on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Shop Mock Login</title>
+    <style>
+        /* standardizes default layout base */
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        /* prevents form elements from overlapping */
+        .form-group { margin-bottom: 15px; }
+        /* expands clickable area for field labels */
+        label { display: block; margin-bottom: 5px; }
+        /* aligns field widths consistently */
+        input { width: 300px; padding: 8px; }
+        /* provides adequate touch target sizing */
+        button { padding: 8px 15px; }
+        /* highlights invalid states immediately */
+        .error { color: red; margin-top: 10px; }
+        /* signals successful clearance */
+        .success { color: green; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Juice Shop Mock Login</h2>
+    <!-- enables standard form payload serialization -->
+    <form id="loginForm">
+        <div class="form-group">
+            <!-- ties label to input for screen readers -->
+            <label for="email">Email</label>
+            <!-- enables basic browser-level pre-checks -->
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Log In</button>
+    </form>
+    <!-- separates status display from form layout -->
+    <div id="message"></div>
+
+    <!-- delays script loading until dom elements exist -->
+    <script src="app.js"></script>
+</body>
+</html>

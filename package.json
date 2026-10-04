@@ -1,0 +1,17 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "A front-end login interface and security testbed modeled after the OWASP Juice Shop application. This project demonstrates client-side and simulated server-side input validation, defense-in-depth principles, and resilience against common web application vulnerabilities (such as XSS and SQL Injection).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
