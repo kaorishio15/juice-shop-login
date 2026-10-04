@@ -20,6 +20,7 @@ This repository serves as a educational security research prototype designed to 
 ├── app.js            # Validation logic and DOM handling
 ├── README.md         # Project documentation
 └── .gitignore        # Version control configuration
+```
 
 ## How to Run
 1. Clone this repository:
